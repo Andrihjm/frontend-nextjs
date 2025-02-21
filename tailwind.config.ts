@@ -12,6 +12,7 @@ const config: Config = {
         white: "#FFFFFF",
         secondary: "#FFFFFF85",
         blur: "#0E191F",
+        "white-opacity": "#FFFFFF0F",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
