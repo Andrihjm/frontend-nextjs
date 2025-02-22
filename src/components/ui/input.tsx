@@ -1,7 +1,8 @@
 interface InputProps {
   type?: "text" | "password" | "email" | "number";
   id?: string;
-  value: string;
+  name?: string;
+  value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   dir?: "rtl" | "ltr";
   className?: string;
@@ -11,6 +12,7 @@ interface InputProps {
 const Input = ({
   type,
   id,
+  name,
   value,
   onChange,
   dir,
@@ -21,6 +23,7 @@ const Input = ({
     <input
       id={id}
       type={type}
+      name={name}
       value={value}
       onChange={onChange}
       dir={dir}
