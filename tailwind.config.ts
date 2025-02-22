@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        dark: "#09141A",
+        dark_secondary: "#0E191F",
         white: "#FFFFFF",
-        secondary: "#FFFFFF85",
+        secondary: "#4C5559",
         blur: "#0E191F",
         "white-opacity": "#FFFFFF0F",
       },

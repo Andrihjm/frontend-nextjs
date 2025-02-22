@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="flex h-full w-full flex-col">
-      <BackButton className="font-bold pt-6">
+    <div className="flex h-full w-full flex-col py-6">
+      <BackButton className="font-bold">
         <Image
           src={"/svg/arrow-left.svg"}
           width={100}
