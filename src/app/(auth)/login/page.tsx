@@ -2,8 +2,17 @@ import LoginForm from "@/components/forms/auth/login-form";
 import BackButton from "@/components/globals/back-button";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 
 const page = () => {
+  const cookieStore = cookies();
+  const token = cookieStore.get("token");
+
+  if (token) {
+    redirect("/");
+  }
+
   return (
     <div className="flex h-full w-full flex-col py-6">
       <BackButton className="font-bold">
