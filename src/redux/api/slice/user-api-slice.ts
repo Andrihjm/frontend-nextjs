@@ -10,6 +10,7 @@ export const userApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+
     register: builder.mutation({
       query: (data) => ({
         url: `${USERS_URL}/register`,
@@ -17,7 +18,15 @@ export const userApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+
+    getUser: builder.query({
+      query: () => ({
+        url: `${USERS_URL}/profile`,
+      }),
+      providesTags: ["User"],
+    }),
   }),
 });
 
-export const { useLoginMutation, useRegisterMutation } = userApiSlice;
+export const { useLoginMutation, useRegisterMutation, useGetUserQuery } =
+  userApiSlice;

@@ -1,10 +1,13 @@
 interface CardProps {
+  className?: string;
   children: React.ReactNode;
 }
 
-const Card = ({ children }: CardProps) => {
+const Card = ({ className, children }: CardProps) => {
   return (
-    <div className="bg-dark_secondary rounded-xl px-4 py-6">{children}</div>
+    <div className={`rounded-xl bg-dark_secondary px-4 py-6 ${className}`}>
+      {children}
+    </div>
   );
 };
 
