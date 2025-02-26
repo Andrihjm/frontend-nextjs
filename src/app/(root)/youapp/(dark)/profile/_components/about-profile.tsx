@@ -6,7 +6,7 @@ import Message from "@/components/tamplates/message";
 import Card from "@/components/ui/card";
 import Spinner from "@/components/ui/spinner";
 import { useGetprofileQuery } from "@/redux/api/slice/profile-api-slice";
-import { formatBirthday } from "@/utils/format-date";
+import { formatAge } from "@/utils/format-date";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -62,12 +62,12 @@ const AboutProfile = () => {
                   <div className="space-y-2">
                     <LabelValue
                       label="Birthday"
-                      value={formatBirthday(data.birthday)}
+                      value={formatAge(data.birthday)}
                     />
                     <LabelValue label="Horoscope" value={data.horoscope} />
                     <LabelValue label="Zodiac" value={data.zodiac} />
-                    <LabelValue label="Height" value={data.height} />
-                    <LabelValue label="Wight" value={data.weight} />
+                    <LabelValue label="Height" value={`${data.height} cm`} />
+                    <LabelValue label="Wight" value={`${data.weight} kg`} />
                   </div>
                 ) : (
                   <p className="leading-5 text-secondary">

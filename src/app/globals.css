@@ -36,4 +36,16 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .text-blue {
+    background: linear-gradient(
+      134.86deg,
+      #abfffd 2.64%,
+      #4599db 102.4%,
+      #aadaff 102.4%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
