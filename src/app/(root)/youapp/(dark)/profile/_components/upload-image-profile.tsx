@@ -9,7 +9,6 @@ import Image from "next/image";
 
 const UploadImageProfile = () => {
   const { data, isLoading, isError } = useGetprofileQuery(undefined);
-
   const { data: auth } = useGetUserQuery(undefined);
 
   return (

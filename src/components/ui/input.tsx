@@ -11,6 +11,7 @@ interface InputProps {
   placeholder?: string;
   readOnly?: boolean;
   defaultValue?: any;
+  onKeyDown?: (e: any) => void;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -26,6 +27,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       placeholder,
       readOnly,
       defaultValue,
+      onKeyDown,
     },
     ref,
   ) => {
@@ -41,6 +43,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         placeholder={placeholder}
         readOnly={readOnly}
         defaultValue={defaultValue}
+        onKeyDown={onKeyDown}
         className={`w-full outline-none ${className}`}
       />
     );
