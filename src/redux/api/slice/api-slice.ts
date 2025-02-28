@@ -13,7 +13,7 @@ const baseQuery = fetchBaseQuery({
   },
 });
 
-const tagTypes = ["User", "Profile", "Interest"];
+const tagTypes = ["User", "Profile", "Interest", "Message"];
 
 export const apiSlice = createApi({
   baseQuery,

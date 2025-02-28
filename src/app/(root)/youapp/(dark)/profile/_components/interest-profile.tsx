@@ -34,7 +34,7 @@ const InterestProfile = () => {
             <Message variant="danger">Ini error</Message>
           ) : (
             <>
-              {data ? (
+              {data.length > 0 ? (
                 <div className="flex flex-wrap items-center gap-2">
                   {data.map((interest: InterestTypes) => (
                     <div

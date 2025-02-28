@@ -11,3 +11,8 @@ export const formatAge = (birthday: string) => {
 
   return `${formattedDate} (Age ${age})`;
 };
+
+export const formatTime = (time: string) => {
+  const formattedDate = moment(time).format("HH:mm");
+  return formattedDate;
+};

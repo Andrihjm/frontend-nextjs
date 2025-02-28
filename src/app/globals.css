@@ -48,4 +48,8 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    display: none;
+  }
 }
