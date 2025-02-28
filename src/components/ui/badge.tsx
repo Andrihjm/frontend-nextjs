@@ -1,6 +1,6 @@
 interface BadgeProps {
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const Badge = ({ className, children }: BadgeProps) => {

@@ -33,7 +33,7 @@ const ChatHeader = () => {
                 className="h-full w-full object-cover"
               />
             </div>
-            <p className="font-semibold">{data.displayName}</p>
+            <p className="font-semibold">{data?.displayName}</p>
           </div>
         ) : (
           <div className="flex items-center gap-2">

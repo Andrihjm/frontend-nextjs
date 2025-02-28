@@ -11,3 +11,8 @@ export interface MessageTypes {
   createdAt: string;
   deleted?: boolean;
 }
+
+export interface UserListTypes {
+  _id: string;
+  username: string;
+}

@@ -33,7 +33,7 @@ const LoginForm = () => {
       Cookies.set("token", response.access_token, {
         expires: 7,
       });
-      router.push("/youapp/profile");
+      router.push("/");
     } catch (err: any) {
       console.error(err);
     }
