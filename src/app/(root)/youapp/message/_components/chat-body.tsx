@@ -1,3 +1,5 @@
+"use client";
+
 import { useGetMessageQuery } from "@/redux/api/slice/message-api-slice";
 import ChatBadge from "./chat-badge";
 import { formatTime } from "@/utils/format-date";

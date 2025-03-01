@@ -1,5 +1,3 @@
-"use client";
-
 import FormSendMessage from "@/components/forms/youapp/form-send-message";
 import ChatBody from "./chat-body";
 import ChatHeader from "./chat-header";
