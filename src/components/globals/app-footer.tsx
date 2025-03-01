@@ -23,7 +23,7 @@ const AppFooter = () => {
             )}
           />
         </Link>
-        <Link href="/group">
+        <Link href="/">
           <GrGroup
             size={24}
             className={clsx(
